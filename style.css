@@ -1,5 +1,5 @@
-#navbar,#footer{
-    background-color: whitesmoke;
+body{
+    background-color: #4F72FF;
 }
 .nav-item{
     font-family: 'Open Sans', sans-serif;
@@ -7,10 +7,39 @@
         background-color: grey
     }
 }
-#intro{
-    background-image:url("images/white-background.jpg");
+#footer{
+    background-color: rgb(148, 144, 144);
 }
-
+.bg1{
+    background: linear-gradient(300deg, #dbe5e9, #b5abac, #a2918f);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+.bg2{
+    background: linear-gradient(300deg, #899ea6, #758592, #e5eaeb);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.border-bottom{
+    color:black;
+}
+.nav-link{
+    color:#ebeef5!important;
+}
+.nav-link:hover{
+    color:#0f2e5e!important;
+}
 .name,h1{
     font-family: 'PT Serif', serif;
 }
@@ -31,4 +60,27 @@
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
+    align-items: start;
+}
+.card{
+    background-color: grey!important;
+}
+.reveal{
+    transform: translateY(150px);
+    opacity: 1;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.skillset,.project-heading{
+    font-weight:700;
+    height:10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#navbar,#connect{
+    background-color: #838e98;
 }
